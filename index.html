@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Gösterimi</title>
+  <title>GIF Gösterimi</title>
   <style>
     /* Sayfanın tümünü kaplayan siyah arka plan */
     html, body {
@@ -17,8 +17,8 @@
       align-items: center;
     }
 
-    /* Video'ya sabit boyut ve responsive uyum */
-    .video-wrapper video {
+    /* GIF'e sabit boyut ve responsive uyum */
+    .gif-wrapper img {
       width: 426px;
       height: 240px;
       max-width: 100%;
@@ -27,14 +27,14 @@
 
     /* Mobil uyum için ekstra koruma */
     @media (orientation: portrait) {
-      .video-wrapper video {
+      .gif-wrapper img {
         width: 90vw;
         height: auto;
       }
     }
 
     @media (orientation: landscape) {
-      .video-wrapper video {
+      .gif-wrapper img {
         height: 90vh;
         width: auto;
       }
@@ -42,12 +42,9 @@
   </style>
 </head>
 <body>
-  <div class="video-wrapper">
-    <!-- Otomatik başlama ve ses açma özellikleri eklendi -->
-    <video autoplay muted loop controls>
-      <source src="LogoVideo.mp4" type="video/mp4">
-      Tarayıcınız video formatını desteklemiyor.
-    </video>
+  <div class="gif-wrapper">
+    <!-- Buraya kendi GIF dosyanın yolunu yaz -->
+    <img src="LogoVideo.mp4.gif" alt="GIF">
   </div>
 </body>
 </html>
